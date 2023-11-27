@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="94dp"
+        tools:srcCompat="@drawable/logo_2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="283dp"
+        tools:srcCompat="@drawable/login_logo" />
+
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="#3B3B3B"
+        android:backgroundTint="8dp"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Forgotten your Password?"
+        android:textAlignment="textEnd"
+        android:textColor="#3B3B3B"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#a6a6a6"
+        android:text="Username"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="343dp"
+        tools:srcCompat="@drawable/password_logo" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#a6a6a6"
+        android:text="Password"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#3B3B3B"
+        android:text="Log in"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
