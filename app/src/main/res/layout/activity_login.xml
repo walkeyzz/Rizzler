@@ -6,73 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="94dp"
-        tools:srcCompat="@drawable/logo_2" />
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_2" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profil_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="283dp"
-        tools:srcCompat="@drawable/login_logo" />
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="264dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginTop="283dp"
+        app:srcCompat="@drawable/login_logo" />
 
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/login_email"
+        android:layout_marginTop="348dp"
+        android:background="#a6a6a6"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="272dp"
+        android:background="#a6a6a6"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/password_logo" />
 
     <TextView
+        android:id="@+id/forgetpassword"
         android:layout_width="220dp"
         android:layout_height="40dp"
-        android:background="#3B3B3B"
-        android:backgroundTint="8dp"
-        android:text="Username"
-        android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="506dp" />
-
-    <TextView
-        android:layout_width="220dp"
-        android:layout_height="40dp"
+        android:layout_marginTop="400dp"
         android:text="Forgotten your Password?"
         android:textAlignment="textEnd"
         android:textColor="#3B3B3B"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="220dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#a6a6a6"
-        android:text="Username"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="291dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="343dp"
-        tools:srcCompat="@drawable/password_logo" />
-
-    <Button
-        android:layout_width="220dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#a6a6a6"
-        android:text="Password"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="354dp" />
-
-    <Button
+        android:id="@+id/login_btn"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginTop="440dp"
         android:backgroundTint="#3B3B3B"
         android:text="Log in"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

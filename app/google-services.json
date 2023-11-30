@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "282250372697",
+    "project_id": "instaapp-dd033",
+    "storage_bucket": "instaapp-dd033.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282250372697:android:c4b1417801d3957895b348",
+        "android_client_info": {
+          "package_name": "com.example.rizzler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZYwj0v9Xq7xLa8CxR-_0IhDpLC1sgFng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
