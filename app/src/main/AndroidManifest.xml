@@ -16,19 +16,19 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".ForgetActivity"
+            android:name=".Model.ForgetActivity"
             android:exported="false" />
         <activity
-            android:name=".FirstActivity"
+            android:name=".Model.FirstActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Model.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".Model.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Model.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

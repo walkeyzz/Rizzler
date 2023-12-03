@@ -1,4 +1,4 @@
-package com.example.rizzler
+package com.example.rizzler.Model
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import com.example.rizzler.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         forgetpassword.setOnClickListener {
-            startActivity(Intent(this,ForgetActivity::class.java))
+            startActivity(Intent(this, ForgetActivity::class.java))
         }
         login_btn.setOnClickListener {
             loginUser()
@@ -70,7 +71,7 @@ class LoginActivity : AppCompatActivity() {
         if(FirebaseAuth.getInstance().currentUser!=null)
         {
             //forwarding to home page
-            val intent= Intent(this@LoginActivity,MainActivity::class.java)
+            val intent= Intent(this@LoginActivity, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
             finish()

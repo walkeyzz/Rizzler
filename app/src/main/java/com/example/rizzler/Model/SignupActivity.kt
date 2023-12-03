@@ -1,24 +1,21 @@
-package com.example.rizzler
-
+package com.example.rizzler.Model
 
 import android.app.ProgressDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.rizzler.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_sign_up.*
 
-class SignUpActivity : AppCompatActivity() {
+class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
         login_link.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
         signup_btn.setOnClickListener {
             createAccount()
@@ -66,8 +63,8 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveUserInfo(fullName: String, userName: String, email: String,progressDialog:ProgressDialog) {
-        val currentUserId=FirebaseAuth.getInstance().currentUser!!.uid
+    private fun saveUserInfo(fullName: String, userName: String, email: String,progressDialog: ProgressDialog) {
+        val currentUserId= FirebaseAuth.getInstance().currentUser!!.uid
         val userRef : DatabaseReference=FirebaseDatabase.getInstance().reference.child("Users")
 
         val userMap=HashMap<String,Any>()
@@ -83,7 +80,7 @@ class SignUpActivity : AppCompatActivity() {
             .addOnCompleteListener {task ->
                 if(task.isSuccessful)
                 {
-                    Toast.makeText(this,"Account has been created",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"Account has been created", Toast.LENGTH_SHORT).show()
 
 
                     FirebaseDatabase.getInstance().reference
@@ -92,7 +89,7 @@ class SignUpActivity : AppCompatActivity() {
                         .setValue(true)
 
 
-                    val intent=Intent(this@SignUpActivity,MainActivity::class.java)
+                    val intent= Intent(this@SignUpActivity, MainActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                     finish()
